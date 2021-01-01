@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Movie.css"
 
 class Movie extends React.Component {
     render() {
         return (
-            <div>
-                <h1>{this.props.title}</h1>
-                <h2>{this.props.year}</h2>
-                <img src={this.props.poster}></img>
-                <h3>{this.props.summary}</h3>
+            <div class="movie">
+                <h3 class="movie__title">{this.props.title}</h3>
+                <h5 class="movie__year">{this.props.year}</h5>
+                <img class="movie__poster" src={this.props.poster}></img>
+                <p class="movie__summary">{this.props.summary}</p>
             </div>
         )
     }
